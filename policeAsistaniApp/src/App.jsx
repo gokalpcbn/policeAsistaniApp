@@ -10,6 +10,7 @@ function App() {
     <>
       <h1>POLİÇE ASİSTANINA HOŞGELDİNİZ...</h1>
       <div><h1>POLİÇE KAYIT SİSTEMİ</h1></div>
+      <h2>HADİ BAŞLAYALIM.</h2>
     </>
   )
 }
