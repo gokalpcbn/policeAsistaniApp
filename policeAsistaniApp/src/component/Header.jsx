@@ -1,31 +1,32 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
-    <>
-      <div className="header">
-        <div className="header-links">
-          <a href="/" className="nav-link">
-            Ana Sayfa
-          </a>
-          <a href="/hakkinda" className="nav-link">
-            Hakkında
-          </a>
-          <a href="/urunler" className="nav-link">
-            Ürünler/Hizmetler
-          </a>
-          <a href="/saglik" className="nav-link">
-            Poliçelerim
-          </a>
-          <a href="/iletisim" className="nav-link">
-            İletişim
-          </a>
-        </div>
-        <div href="/" className="header-links">
-          <a href="Login" className="nav-link">
-            GİRİŞ YAP/ÜYE OL
-          </a>
-        </div>
+    <div className="header">
+      <div className="header-links">
+        <Link to="/" className="nav-link">
+          Ana Sayfa
+        </Link>
+        <Link to="/hakkinda" className="nav-link">
+          Hakkında
+        </Link>
+        <Link to="/urunler" className="nav-link">
+          Ürünler/Hizmetler
+        </Link>
+        <Link to="/saglik" className="nav-link">
+          Poliçelerim
+        </Link>
+        <Link to="/iletisim" className="nav-link">
+          İletişim
+        </Link>
       </div>
-    </>
+      <div className="header-links">
+        <Link to="/login" className="nav-link">
+          GİRİŞ YAP/ÜYE OL
+        </Link>
+      </div>
+    </div>
   );
 }
+
 export default Header;

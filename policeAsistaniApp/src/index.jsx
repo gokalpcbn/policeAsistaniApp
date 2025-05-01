@@ -3,10 +3,14 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./component/App.jsx";
 import Header from "./component/Header.jsx";
+import { BrowserRouter } from "react-router-dom";
 
-createRoot(document.getElementById("root")).render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <StrictMode>
-    <Header />
-    <App />
+    <BrowserRouter>
+      <Header />
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );

@@ -1,31 +1,41 @@
-import { useState } from "react";
-import "../index.css";
+import { Routes, Route, Link } from "react-router-dom";
+import CarInsurance from "./insurance/CarInsurance";
+import TrafficInsurance from "./insurance/TrafficInsurance";
+import HealthInsurance from "./insurance/HealthInsurance";
+import HomeInsurance from "./insurance/HomeInsurance";
+import TravelInsurance from "./insurance/TravelInsurance";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="navbar">
-        <a href="/kasko" className="nav-button">
+        <Link to="/kasko" className="nav-button">
           KASKO
-        </a>
-        <a href="/trafik" className="nav-button">
+        </Link>
+        <Link to="/trafik" className="nav-button">
           TRAFİK
-        </a>
-        <a href="/dask" className="nav-button">
+        </Link>
+        <Link to="/dask" className="nav-button">
           DASK
-        </a>
-        <a href="/saglik" className="nav-button">
+        </Link>
+        <Link to="/saglik" className="nav-button">
           SAĞLIK
-        </a>
-        <a href="/saglik" className="nav-button">
+        </Link>
+        <Link to="/konut" className="nav-button">
           KONUT
-        </a>
-        <a href="/saglik" className="nav-button">
+        </Link>
+        <Link to="/seyahat" className="nav-button">
           SEYAHAT
-        </a>
+        </Link>
       </div>
+
+      <Routes>
+        <Route path="/kasko" element={<CarInsurance />} />
+        <Route path="/trafik" element={<TrafficInsurance />} />
+        <Route path="/saglik" element={<HealthInsurance />} />
+        <Route path="/konut" element={<HomeInsurance />} />
+        <Route path="/seyahat" element={<TravelInsurance />} />
+      </Routes>
     </>
   );
 }
