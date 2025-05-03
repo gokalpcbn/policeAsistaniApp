@@ -4,6 +4,8 @@ import TrafficInsurance from "./insurance/TrafficInsurance";
 import HealthInsurance from "./insurance/HealthInsurance";
 import HomeInsurance from "./insurance/HomeInsurance";
 import TravelInsurance from "./insurance/TravelInsurance";
+import DaskInsurance from "./insurance/DaskInsurance";
+import About from "./header/About";
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
         <Route path="/trafik" element={<TrafficInsurance />} />
         <Route path="/saglik" element={<HealthInsurance />} />
         <Route path="/konut" element={<HomeInsurance />} />
+        <Route path="/dask" element={<DaskInsurance />} />
         <Route path="/seyahat" element={<TravelInsurance />} />
+        <Route path="/hakkinda" element={<About />} />
       </Routes>
     </>
   );

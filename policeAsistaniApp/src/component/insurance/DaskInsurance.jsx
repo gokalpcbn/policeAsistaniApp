@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./TrafficInsurance.css";
+import "./DaskInsurance.css";
 
-function TrafficInsurance() {
+function DaskInsurance() {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
@@ -10,8 +10,8 @@ function TrafficInsurance() {
 
   return (
     <>
-      <div className="traffic-insurance-container">
-        <h1>TRAFİK SİGORTASI</h1>
+      <div className="dask-insurance-container">
+        <h1>DASK SİGORTASI</h1>
         <label htmlFor="">SİGORTALI ADI SOYADI:</label>
         <input type="text" placeholder="Adı Soyadı" />
 
@@ -57,4 +57,4 @@ function TrafficInsurance() {
   );
 }
 
-export default TrafficInsurance;
+export default DaskInsurance;

@@ -13,7 +13,7 @@ function Header() {
         <Link to="/urunler" className="nav-link">
           Ürünler/Hizmetler
         </Link>
-        <Link to="/saglik" className="nav-link">
+        <Link to="/policelerim" className="nav-link">
           Poliçelerim
         </Link>
         <Link to="/iletisim" className="nav-link">
