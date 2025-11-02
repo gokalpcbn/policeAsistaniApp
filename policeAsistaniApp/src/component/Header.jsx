@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Header() {
   return (
     <div className="header">
+      <div className="header-logo">
+        <img src={logo} alt="Poliçe Asistanı Logo" style={{ width: "120px", height: "auto" }} />
+      </div>
       <div className="header-links">
         <Link to="/" className="nav-link">
           Ana Sayfa
