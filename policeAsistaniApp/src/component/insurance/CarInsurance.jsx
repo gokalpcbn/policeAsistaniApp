@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CarInsurance.css";
+import insuranceCompanies from "../../data/insuranceCompanies";
 
 function CarInsurance() {
   const [startDate, setStartDate] = useState("");
@@ -11,33 +12,17 @@ function CarInsurance() {
   return (
     <>
       <div className="car-insurance-container">
-        <h1>KONUT SİGORTASI</h1>
+        <h1>KASKO SİGORTASI</h1>
         <label htmlFor="">SİGORTALI ADI SOYADI:</label>
         <input type="text" placeholder="Adı Soyadı" />
 
         <label htmlFor="sigorta">SİGORTA ŞİRKETİ SEÇİNİZ:</label>
         <select name="sigorta_sirketi" id="sigorta">
-          <option value="AnadoluSigorta">ANADOLU SİGORTA</option>
-          <option value="AxaSigorta">AXA SİGORTA</option>
-          <option value="AllianzSigorta">ALLİANZ SİGORTA</option>
-          <option value="TurkiyeSigorta">TÜRKİYE SİGORTA</option>
-          <option value="MapfreSigorta">MAPFRE SİGORTA</option>
-          <option value="SompoSigorta">SOMPO SİGORTA</option>
-          <option value="GroupamaSigorta">GROUPAMA SİGORTA</option>
-          <option value="RaySigorta">RAY SİGORTA</option>
-          <option value="HDISigorta">HDI SİGORTA</option>
-          <option value="NeovaSigorta">NEOVA SİGORTA</option>
-          <option value="DoğaSigorta">DOĞA SİGORTA</option>
-          <option value="QuickSigorta">QUICK SİGORTA</option>
-          <option value="ZurichSigorta">ZURICH SİGORTA</option>
-          <option value="MagdeburgerSigorta">MAGDEBURGER SİGORTA</option>
-          <option value="BNPSigorta">BNP PARIBAS CARDIF</option>
-          <option value="AkSigorta">AK SİGORTA</option>
-          <option value="GeneraliSigorta">GENERALI SİGORTA</option>
-          <option value="AnkaraSigorta">ANKARA SİGORTA</option>
-          <option value="UnicoSigorta">UNICO SİGORTA</option>
-          <option value="CorpusSigorta">CORPUS SİGORTA</option>
-          <option value="Diğer">DİĞER</option>
+          {insuranceCompanies.map((company, index) => (
+            <option key={index} value={company}>
+              {company}
+            </option>
+          ))}
         </select>
 
         <label htmlFor="startDate">Başlangıç Tarihi:</label>

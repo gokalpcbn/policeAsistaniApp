@@ -1,0 +1,25 @@
+const insuranceCompanies = [
+  "ANADOLU SİGORTA",
+  "AXA SİGORTA",
+  "ALLİANZ SİGORTA",
+  "TÜRKİYE SİGORTA",
+  "MAPFRE SİGORTA",
+  "SOMPO SİGORTA",
+  "GROUPAMA SİGORTA",
+  "RAY SİGORTA",
+  "HDI SİGORTA",
+  "NEOVA SİGORTA",
+  "DOĞA SİGORTA",
+  "QUICK SİGORTA",
+  "ZURICH SİGORTA",
+  "MAGDEBURGER SİGORTA",
+  "BNP PARIBAS CARDIF",
+  "AK SİGORTA",
+  "GENERALI SİGORTA",
+  "ANKARA SİGORTA",
+  "UNICO SİGORTA",
+  "CORPUS SİGORTA",
+  "DİĞER",
+];
+
+export default insuranceCompanies;
